@@ -1,10 +1,7 @@
 <?php
     $server = "localhost";
     $username ="root";
-    
-
     $conn = mysqli_connect($server, $username);
-
     if(!$conn){
         die("Connection To This Databse Failed Due to". mysqli_connect_error());
     }
@@ -14,7 +11,6 @@
      $email = "";
      $subject = "";
      $message = "";
-
 
      if (isset($_POST['name'])) {
         $name = $_POST['name'];
